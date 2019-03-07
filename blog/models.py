@@ -12,7 +12,8 @@ class Post(models.Model):
             blank=True, null=True)
 
     # image = models.ImageField(default='default.png', blank=True)
-    image = models.FileField(default='default.png', blank=True)
+    # image = models.FileField(default='default.png', blank=True)
+    image = models.FileField(blank=True)
     # uploaded_at = models.DateTimeField(auto_now_add=True)
 
 
