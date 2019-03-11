@@ -20,7 +20,9 @@
         <h1>{{ post.title }}</h1>
         <p>{{ post.text|linebreaksbr }}</p>
         {% if post.image %}
-        <img src ="{{ post.image.url }}" />
+        <!-- <img src ="{{ post.image.url }}" /> -->
+        <p>File upload location : <a href="{{ post.image.url }}">{{ post.image.url }}</a></p>
+
         {% endif %}
 
     </div>
