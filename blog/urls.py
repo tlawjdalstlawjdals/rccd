@@ -15,7 +15,10 @@ urlpatterns = [
     url(r'^drafts/$', views.post_draft_list, name='post_draft_list'),
     url(r'^post/(?P<pk>\d+)/publish/$', views.post_publish, name='post_publish'),
     url(r'^post/(?P<pk>\d+)/remove/$', views.post_remove, name='post_remove'),
+    # post_detail button -> post_decay path -> views.post_decay run'
 
+    url(r'^decay/$', views.post_decay, name='post_decay'),
+    # path('post/<int:pk>/', views.post_decay, name='post_decay'),
 ]
 
 
